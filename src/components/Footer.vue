@@ -49,6 +49,14 @@ export default {
     instagram,
     linkedin,
   },
+  computed: {
+    admin() {
+      return true;
+    },
+    user() {
+      return true;
+    }
+  }
 }
 </script>
 
