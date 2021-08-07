@@ -2,7 +2,10 @@
   <header>
     <nav class="container">
       <div class="branding">
-        <router-link class="header" :to="{ name: 'Home' }">Vue FireBlog</router-link>
+        <router-link class="header" :to="{ name: 'Home' }">
+          <img src="https://img.icons8.com/plasticine/50/000000/blog.png"/>
+          Vue FireBlog
+        </router-link>
       </div>
       <div class="nav-links">
         <ul v-if="!mobile">
@@ -94,6 +97,7 @@ header {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   z-index: 99;
 
+
   .link {
     font-weight: 500;
     padding: 0 8px;
@@ -113,10 +117,17 @@ header {
       align-items: center;
 
       .header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
         font-weight: 600;
         font-size: 24px;
         color: #000;
         text-decoration: none;
+
+        img {
+          margin-right: 10px;
+        }
       }
     }
 
